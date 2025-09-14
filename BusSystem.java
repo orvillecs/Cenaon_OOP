@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // import java.util.Random;
 
-public class BusSystem {
+public class Main {
     static String[] seats = {
         "01","02","03","04","05",
         "06","07","08","09","10",
@@ -12,19 +12,19 @@ public class BusSystem {
   static boolean[] isBooked = new boolean[20];
   static String[] passengerName = new String[20];
   static final double ticketPrice = 150.0;
+  
+  static final String bold = "\033[1m";
   static final String GREEN = "\u001B[38;5;10m";
   static final String RED = "\u001B[91m";
   static final String RESET = "\u001B[0m";
-  static final String LINE = "————————————————————";
-  static final String bold = "\033[1m";
-  static final String reset = "\033[0m";
+  static final String LINE = bold + "————————————————————" + RESET;
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         
-        System.out.println(GREEN + bold + "ORVILLE EXPRESS - Manila to Cavite" + reset + RESET);
-
+        System.out.println(GREEN + bold + "ORVILLE EXPRESS - Manila to Cavite" + RESET);
+        
         while (choice != 4) {
             System.out.println("\nMenu:");
             System.out.println("1. Show Seats");
@@ -50,7 +50,8 @@ public class BusSystem {
     }
 
     static void showSeats() {
-        System.out.println(GREEN + "\n--- BUS SEAT MAP ---" + RESET);
+        System.out.println(LINE);
+        System.out.println(GREEN + bold + "BUS SEAT MAP" + RESET);
         for (int i = 0; i < seats.length; i++) {
             if (isBooked[i]) {
                 System.out.print(seats[i] + "🟥 ");
@@ -58,7 +59,7 @@ public class BusSystem {
                 System.out.print(seats[i] + "🟩 ");
             }
 
-            if (i % 2 == 1) {
+            if (i % 4 == 3) {
                 System.out.println();
             }
         }
@@ -81,7 +82,7 @@ public class BusSystem {
             passengerName[index] = name;
 
             System.out.println("-------------------------");
-            System.out.println(GREEN + "ORVILLE EXPRESS");
+            System.out.println(GREEN + bold + "ORVILLE EXPRESS");
             System.out.println("OFFICIAL RECEIPT" + RESET);
             System.out.println("\nPASSENGER: " + name);
             System.out.println("SEAT NO: " + seatChoice);
@@ -117,4 +118,3 @@ public class BusSystem {
         return -1;
     }
 }
-        
