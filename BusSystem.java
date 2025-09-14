@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // import java.util.Random;
 
-public class main {
+public class BusSystem {
     static String[] seats = {
         "01","02","03","04","05",
         "06","07","08","09","10",
