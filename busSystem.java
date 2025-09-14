@@ -14,18 +14,15 @@ public class main {
   static final double ticketPrice = 150.0;
   static final String GREEN = "\u001B[38;5;10m";
   static final String RED = "\u001B[91m";
-
-    static final String GREEN = "\u001B[38;5;10m";
-    static final String RED = "\u001B[91m";
-    static final String RESET [0m";
-    static final String LINE = "————————————————————";
-
-
+  static final String RED = "\u001B[91m";
+  static final String RESET = "\u001B[0m";
+  static final String LINE = "————————————————————";
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         
-        System.out.println(GREEN + "(ORVILLE EXPRESS - Manila to Cavite" + RESET);
+        System.out.println(GREEN + "ORVILLE EXPRESS - Manila to Cavite" + RESET);
 
         while (choice != 4) {
             System.out.println("\nMenu:");
