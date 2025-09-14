@@ -16,12 +16,14 @@ public class BusSystem {
   static final String RED = "\u001B[91m";
   static final String RESET = "\u001B[0m";
   static final String LINE = "————————————————————";
+  static final String bold = "\033[1m";
+  static final String reset = "\033[0m";
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         
-        System.out.println(GREEN + "ORVILLE EXPRESS - Manila to Cavite" + RESET);
+        System.out.println(GREEN + bold + "ORVILLE EXPRESS - Manila to Cavite" + reset + RESET);
 
         while (choice != 4) {
             System.out.println("\nMenu:");
