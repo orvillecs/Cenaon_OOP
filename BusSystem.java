@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // import java.util.Random;
 
-public class Main {
+public class BusSystem {
     static String[] seats = {
         "01","02","03","04","05",
         "06","07","08","09","10",
@@ -11,6 +11,7 @@ public class Main {
   
   static boolean[] isBooked = new boolean[20];
   static String[] passengerName = new String[20];
+  static final String route = ("Manila to Cavite");
   static final double ticketPrice = 150.0;
   
   static final String bold = "\033[1m";
@@ -23,10 +24,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int choice = 0;
         
-        System.out.println(GREEN + bold + "ORVILLE EXPRESS - Manila to Cavite" + RESET);
+        System.out.println(GREEN + bold + "ORVILLE EXPRESS - " + route + RESET);
         
         while (choice != 4) {
-            System.out.println("\nMenu:");
+            System.out.println(bold + "\nMenu:" + RESET);
             System.out.println("1. Show Seats");
             System.out.println("2. Book a Seat");
             System.out.println("3. Cancel a Booking");
@@ -84,10 +85,10 @@ public class Main {
             System.out.println("-------------------------");
             System.out.println(GREEN + bold + "ORVILLE EXPRESS");
             System.out.println("OFFICIAL RECEIPT" + RESET);
-            System.out.println("\nPASSENGER: " + name);
-            System.out.println("SEAT NO: " + seatChoice);
-            System.out.println("ROUTE: Manila to Cavite");
-            System.out.println("FARE: P" + ticketPrice);
+            System.out.println("\nPASSENGER: " + bold + name + RESET);
+            System.out.println("SEAT NO: " + bold + seatChoice + RESET);
+            System.out.println(bold + "ROUTE: " + route + RESET);
+            System.out.println(bold + "FARE: P" + ticketPrice + RESET);
             System.out.println("-------------------------");
         }
     }
