@@ -60,7 +60,7 @@ public class BusSystem {
                 System.out.print(seats[i] + "🟩 ");
             }
 
-            if (i % 4 == 3) {
+            if (i % 2 == 1) {
                 System.out.println();
             }
         }
