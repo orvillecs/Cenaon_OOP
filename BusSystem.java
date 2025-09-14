@@ -78,12 +78,13 @@ public class BusSystem {
             isBooked[index] = true;
             passengerName[index] = name;
 
-            System.out.println(GREEN + "\n-- ORVILLE EXPRESS ---");
-            System.out.println("--- OFFICIAL RECEIPT ---" + RESET);
+            System.out.println("-------------------------");
+            System.out.println(GREEN + "ORVILLE EXPRESS");
+            System.out.println("OFFICIAL RECEIPT" + RESET);
             System.out.println("\nPASSENGER: " + name);
             System.out.println("SEAT NO: " + seatChoice);
             System.out.println("ROUTE: Manila to Cavite");
-            System.out.println("FARE: ₱" + TICKET_PRICE);
+            System.out.println("FARE: P" + ticketPrice);
             System.out.println("-------------------------");
         }
     }
@@ -113,4 +114,5 @@ public class BusSystem {
         }
         return -1;
     }
-                                 }
+}
+        
