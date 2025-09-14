@@ -14,7 +14,6 @@ public class BusSystem {
   static final double ticketPrice = 150.0;
   static final String GREEN = "\u001B[38;5;10m";
   static final String RED = "\u001B[91m";
-  static final String RED = "\u001B[91m";
   static final String RESET = "\u001B[0m";
   static final String LINE = "————————————————————";
     
@@ -88,8 +87,7 @@ public class BusSystem {
             System.out.println("-------------------------");
         }
     }
-
-    // Method to cancel a booking
+    
     static void cancelSeat(Scanner sc) {
         showSeats();
         System.out.print("\nEnter seat no. to cancel: ");
