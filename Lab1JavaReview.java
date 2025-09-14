@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lib1 {
+public class LibrarySystem {
     static final int MAX_BOOKS = 5;
     static String[] bookTitles = new String[MAX_BOOKS];
     static String[] bookStatus = new String[MAX_BOOKS];
