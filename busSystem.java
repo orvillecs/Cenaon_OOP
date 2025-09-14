@@ -8,14 +8,17 @@ public class main {
         "11","12","13","14","15",
         "16","17","18","19","20"
     };
+  
+  static boolean[] isBooked = new boolean[20];
+  static String[] passengerName = new String[20];
+  static final double ticketPrice = 150.0;
+  static final String GREEN = "\u001B[38;5;10m";
+  static final String RED = "\u001B[91m";
 
-    static boolean[] isBooked = new boolean[20];
-    static String[] passengerName = new String[20];
-    static final int TICKET_PRICE = 500;
     static final String GREEN = "\u001B[38;5;10m";
-        static final String RED = "\u001B[91m";
-        static final String RESET = "\u001B[0m";
-        static final String LINE = "————————————————————";
+    static final String RED = "\u001B[91m";
+    static final String RESET [0m";
+    static final String LINE = "————————————————————";
 
 
     public static void main(String[] args) {
