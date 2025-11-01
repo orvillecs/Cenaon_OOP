@@ -1,4 +1,4 @@
-public class Main {
+public class TeacherStudentAssigment {
     public static void main(String[] args) {
 
         Student s1 = new Student("Ana Santos", 19, "Female", "S1005");
