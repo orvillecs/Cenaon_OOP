@@ -166,8 +166,8 @@ class Television extends Device {
               "|_____________________________|\n" +
               "            __| |__            "
               );
-              System.out.println("»Channel: " + channel);
-              System.out.println("»Volume: " + volume + "%"
+              System.out.println("» Channel: " + channel);
+              System.out.println("» Volume: " + volume + "%"
               );
         } else {
           System.out.println("Television is turned off.");
