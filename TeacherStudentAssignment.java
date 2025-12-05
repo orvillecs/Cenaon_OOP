@@ -49,7 +49,6 @@ class Student extends Person {
     void displayStudent() {
       System.out.println("\n——— Student Information ———");
         displayInfo();
-        System.out.println("Program: " + program);
         System.out.println("Student ID: " + studentId);
         System.out.println("———————————————————————————");
     }
