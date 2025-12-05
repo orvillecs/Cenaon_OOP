@@ -58,7 +58,7 @@ class AirConditioner extends Device {
           System.out.println("Air Conditioner is turned on.");
           System.out.println(
             " _______________________________\n" + 
-            "|  __________________  p——————q |\n" +
+            "|  __________________   ______  |\n" +
             "| I__________________I |——————| |\n" +
             "| I__________________I |——————| |\n" + 
             "| I__________________I |——————| |\n" + 
