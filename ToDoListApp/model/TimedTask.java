@@ -1,7 +1,7 @@
 package model;
 
 public class TimedTask extends Task {
-    private int estimatedMinutes; // Encapsulated attribute [cite: 65, 66]
+    private int estimatedMinutes;
 
     public TimedTask(String taskId, String taskName, String taskDescription, String status, int estimatedMinutes) {
         super(taskId, taskName, taskDescription, status);
@@ -10,4 +10,5 @@ public class TimedTask extends Task {
 
     public int getEstimatedMinutes() { return estimatedMinutes; }
     public void setEstimatedMinutes(int estimatedMinutes) { this.estimatedMinutes = estimatedMinutes; }
+
 }
