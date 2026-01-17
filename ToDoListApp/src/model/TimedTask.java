@@ -8,6 +8,10 @@ public class TimedTask extends Task {
         this.estimatedMinutes = estimatedMinutes;
     }
 
-    public int getEstimatedMinutes() { return estimatedMinutes; }
-    public void setEstimatedMinutes(int estimatedMinutes) { this.estimatedMinutes = estimatedMinutes; }
+    public int getEstimatedMinutes() {
+		return estimatedMinutes;
+		}
+    public void setEstimatedMinutes(int estimatedMinutes) {
+		this.estimatedMinutes = estimatedMinutes;
+		}
 }

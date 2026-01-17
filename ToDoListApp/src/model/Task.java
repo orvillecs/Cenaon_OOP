@@ -3,7 +3,9 @@ package model;
 public class Task extends AbstractTask {
     private String status;
 
-    public Task() { super(); }
+    public Task() {
+		super();
+		}
 
     public Task(String taskId, String taskName, String taskDescription, String status) {
         super(taskId, taskName, taskDescription);
@@ -11,8 +13,12 @@ public class Task extends AbstractTask {
     }
 
     @Override
-    public String getStatus() { return status; }
+    public String getStatus() {
+		return status;
+		}
 
     @Override
-    public void setStatus(String status) { this.status = status; }
+    public void setStatus(String status) {
+		this.status = status;
+		}
 }
