@@ -1,7 +1,7 @@
 package model;
 
 public class Task extends AbstractTask {
-    private String status; // Allowed: DONE, ONGOING, NOT STARTED [cite: 58, 59]
+    private String status;
 
     public Task() { super(); }
 
@@ -15,4 +15,5 @@ public class Task extends AbstractTask {
 
     @Override
     public void setStatus(String status) { this.status = status; }
+
 }
